@@ -1,0 +1,801 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway black';
+    src: url('fonts/Raleway-Black.ttf');
+    font-style: normal;
+}
+
+body {
+    font-family: 'raleway';
+}
+body * {
+    box-sizing: border-box;
+}
+body .container {
+    padding: 0 15px;
+}
+
+
+/*--DEBUT HEADER--*/
+header {
+    width: 100%;
+}
+header nav .logo-reservia {
+    margin: 25px 0 0 15px;
+}
+header nav .logo-reservia img.logo-reservia-img {
+    width: 120px;
+}
+header nav.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header .nav-bar {
+    display: contents;
+}
+header nav.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'raleway';
+}
+header nav .nav-menu-sinscrire {
+    margin: 50px 15px 0 0;
+}
+header nav .nav-menu-sinscrire a {
+    color: #0065fc;
+    font-weight: bold;
+}
+header nav.nav ul.nav-menu {
+    display: flex;
+    flex: 100%;
+    margin-top: 25px;
+}
+header nav.nav ul.nav-menu li  {
+    flex: 50%;
+    text-align: center;
+    border-bottom: 3px solid #f2f2f2;
+}
+header nav.nav ul.nav-menu li.active {
+    border-bottom: 3px solid #0065fc ;
+}
+header nav.nav ul.nav-menu li.active a {
+    color: #0065fc;
+}
+header nav.nav ul.nav-menu li a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+}
+/*--FIN HEADER--*/
+
+
+
+/*--DEBUT RECHERCHE FORMULAIRE--*/
+h1 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 23px; 
+}
+.rechercheform {
+    margin-top: 40px;
+}
+.rechercheform .ville {
+    margin-top: 20px;
+}
+.recherche-position {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 40px;
+}
+.recherche-position .span-icon {
+    display: block;
+    height: 51px;
+    width: 15%;
+    z-index: 2;
+    position: absolute;
+    line-height: 51px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 14px 0 0 14px;
+    font-size: 20px;
+}
+input#name::placeholder {
+    color: black
+}
+input.favorite.styled {
+    background: #0065fc;
+    border: 0;
+    font-size: 18px;
+    width: 30%;
+    color: white;
+    border-radius: 0 14px 14px 0;
+    outline-style: none;
+    height: 51px; 
+ }
+ .recherche-position input#name {
+    border: 2px solid #f2f2f2;
+    width: calc(100% - 100px);
+    outline-style: none;
+    height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    left: 50px;
+    position: relative;
+    padding-left: 19px;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+.recherche-position button.search {
+    border: 0;
+    position: absolute;
+    top: 0;
+    border-radius: 18px;
+    right: 10px;
+    display: block;
+    height: 50px;
+    font-size: 18px;
+    background: #0065fc;
+    color: white;
+    width: 15%;
+    outline-style: none;
+}
+    button span span {
+    display: none;
+}
+/*--FIN RECHERCHE FORMULAIRE--*/
+
+
+
+
+/*--DEBUT RECHERCHE CATEGORIE--*/
+.recherche-categorie {
+    margin-top: 48px; 
+}
+.recherche-categorie span.filtres {
+    font-size: 18px;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+.recherche-filtres .recherche-filtre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+.recherche-filtres {
+    display: flex;
+    flex-direction: column;
+}
+.recherche-filtre li {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.recherche-filtre-button {
+    height: 48px;
+    font-size: 18px;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    outline-style: none;
+    position: relative;
+}
+span.recherche-filtre-icon {
+    width: 50px;
+    background: #deebff;
+    position: absolute;
+    font-size: 20px;
+    top: -2px;
+    height: 50px;
+    line-height: 50px;
+    left: -9px;
+    color: #0065fc;
+    border-radius: 105px;
+}
+span.recherche-filtre-name {
+    margin: 0 10px 0 40px;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+/*--FIN RECHERCHE CATEGORIES--*/
+
+
+
+
+
+/*--DEBUT INFO HEBERGEMENTS--*/
+.block-info-hebergements {
+    margin-top: 20px;
+    display: flex;
+}
+span.info-icon {
+    font-size: 10px;
+    height: 24px;
+    width: 24px;
+    color: #0065fc;
+}
+span.info-icon i.fas.fa-info{   
+    padding: 0.4em 0.7em;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+}
+span.info-hebergement {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+/*--FIN INFO HEBERGEMENTS--*/
+
+
+
+
+
+
+
+
+/*--DEBUT BLOCK HEBERGEMENTS-POPULAIRE--*/
+.Hebergments-populaire {
+    background: #f2f2f2;
+    margin-top: 40px;
+    display: flex;
+    margin-left: -5%;
+    margin-right: -5%;
+    padding-bottom: 35px;
+}
+h2 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 23px;
+}
+aside.les-plus-populaire {
+    width: 100%;
+    padding: 50px 15px 0px 15px;
+}
+aside.les-plus-populaire .populaire-titre {
+    display: flex;
+    justify-content: space-between;
+}
+aside.les-plus-populaire .populaire-titre i.fas.fa-chart-line {
+    font-size: 23px;
+}
+aside.les-plus-populaire a.populaire {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px 0px 0px 0px;
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
+}
+aside.les-plus-populaire a.populaire .populaire-image-div {
+    flex: 35%;
+}
+aside.les-plus-populaire a.populaire .populaire-description {
+    padding-left: 10px;
+    font-size: 17px;
+    flex: 55%;
+    display: block;
+}
+aside.les-plus-populaire a.populaire .populaire-description .populaire-name {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+aside.les-plus-populaire a.populaire .populaire-description .prix {
+    color: black;
+    margin-top: 15px;
+    display: block;
+    font-size: 15px;
+}
+aside.les-plus-populaire a.populaire .populaire-description .note {
+    font-size: 11px;
+    margin-top: 17%;
+}
+aside.les-plus-populaire a.populaire .populaire-description .note .star-blue {
+    color: #0065fc;
+}
+aside.les-plus-populaire a.populaire .populaire-description .note .star {
+    color: #d9d9d9;
+}
+img.populaire-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+/*--FIN BLOCK HEBERGEMENTS-POPULAIRE--*/
+
+
+
+
+
+/*-- DEBUT HEBERGEMENTS A MARSEILLE--*/
+.hebergements-a-marseille {
+    background: white;
+    display: flex;
+}
+.hebergements-marseille {
+    width: 100%;
+    margin: 40px 0 0 0;
+}
+.hebergements-marseille .hebergements {
+    margin-top: 20px;
+}
+.hebergements-marseille .hebergements a.hebergement {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    margin-top: 10px;
+    background: white;
+    border-radius: 25px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 0px 0px 20px 0px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description {
+    padding-left: 10px;
+    font-size: 17px;
+    flex: 55%;
+    display: block;
+    padding-top: 15px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-image-div {
+    flex: 35%;
+    height: 115px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .hebergement-name {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .prix {
+    display: block;
+    padding-top: 6px;
+    font-size: 15px;
+    color: black;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note {
+    display: block;
+    padding: 9px 0 5px 0;
+    font-size: 11px;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note .star-blue {
+    color: #0065fc;
+}
+.hebergements-marseille .hebergements a.hebergement .hebergement-description .note .star {
+    color: #d9d9d9;
+}
+img.hebergement-images {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.hebergements-marseille .hebergements-plus {
+    margin-top: 35px;
+}
+.hebergements-marseille .hebergement-plus {
+    font-family: 'raleway';
+    font-weight: bold;
+    display: block;
+    color: black;
+    padding-left: 20px;
+    font-size: 18px;
+}
+/*--FIN HEBERGEMENTS A MARSEILLE--*/
+
+
+
+
+/*--DEBUT ACTIVITE A MARSEILLE--*/
+section.activites-a-marseille {
+    margin-top: 60px;
+}
+.activites-marseille .activites a.activite {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    margin-top: 25px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #e9e9e9;
+    text-decoration: none;
+    min-height: 135px;
+}
+.activites-marseille a.activite .activite-image-div {
+    flex: 35%;
+    height: 115px;
+}
+.activites-marseille .activites a.activite .activite-name {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 25px 0 20px 20px;
+    height: 70px;
+    display: block;
+}
+img.activite-image {
+    width: 100%;
+    height: 135px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+/*--FIN ACTIVITE A MARSEILLE--*/
+
+
+
+
+/*--DEBUT FOOTER--*/
+footer.bg-light-grey {
+    font-size: 18px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background: #f2f2f2;
+    padding-bottom: 50px;
+}
+span.footer-title {
+    font-family: 'raleway';
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding-top: 45px;
+}
+.footer-colonne a { 
+    font-family: 'raleway';
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+/*--FIN FOOTER--*/
+
+
+
+
+
+
+
+
+
+
+
+/*--DEBUT FORMAT TABLETTE  (769 - 991)--*/
+
+@media screen and (min-width: 768px) { 
+    body .container {
+        padding: 0 3%;
+    } 
+    
+    
+     /*--DEBUT HEADER--*/ 
+    header nav .logo-reservia {
+        margin: 25px 0 0 50px;
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 50px 50px 0 0;
+    }
+    /*--FIN HEADER--*/
+ 
+
+
+
+    /*--DEBUT RECHERCHE FILTRES--*/
+    .recherche-filtres {
+        display: flex;
+        flex-direction:unset
+    }
+    .recherche-filtres .recherche-filtre {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 33px;
+        margin-left: 0;
+    }
+    /*--FIN RECHERCHE FILTRES--*/
+
+
+
+    
+    /*--DEBUT BLOCK INFO--*/ 
+    .block-info-hebergements {
+        display: flex;
+    }
+     /*--FIN BLOCK INFO--*/ 
+
+
+
+
+     /*--DEBUT HEBERGEMENT MARSEILLE POPULAIRE--*/
+    .hebergements-marseille .hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .hebergements-marseille .hebergements a.hebergement {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        margin: 30px 0 0 0;
+        background: white;
+        width: 49%;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: 0px 0px 20px 0px #e9e9e9;
+        text-decoration: none;
+        min-height: 135px;
+    }
+    .Hebergments-populaire {
+        background: #f2f2f2;
+        margin-top: 40px;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20px;
+        width: 100%;
+    }
+    .hebergements-a-marseille {
+        width: 100%;
+    }
+
+    aside.les-plus-populaire {
+        width: 100%;
+        padding: 50px 40px 0px 40px;
+        margin: 0;
+    }
+    aside.les-plus-populaire a.populaire {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin: 30px 0px 0px 0px;
+        background: white;
+        border-radius: 25px;
+        padding: 5px;
+        box-shadow: 10px 10px 10px #e9e9e9;
+        text-decoration: none;
+        min-height: 147px;
+    }
+    aside.les-plus-populaire a.populaire .populaire-description .note {
+        font-size: 11px;
+        margin-top: 30%;
+    }
+    aside.les-plus-populaire a.populaire .populaire-description #note {
+        font-size: 11px;
+        margin-top: 34%;
+    }
+    .hebergements-marseille {
+        width: 100%;
+        padding: 50px 40px 50px 40px;
+        background: #f2f2f2;
+        margin: 40px 0 0 0;
+        border-radius: 20px;
+    }
+     /*--FIN HEBERGEMENT MARSEILLE POPULAIRE--*/
+
+
+
+
+
+
+         /*--DEBUT ACTIVITES MARSEILLE--*/
+    .activites-marseille {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .activites{
+        width: 23%;
+        height: 100%;
+    }
+    .activites-double .activites {
+        width: 100%;
+    }
+    .activites-marseille .activites-simple a.activite .activite-image-div {
+        flex: unset;
+        height: 390px;
+        overflow: hidden;
+    }
+    .activites-double {
+        width: 23%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #activite-image-182 {
+        height: 180px;
+        flex: unset;
+    }
+    #activite-image-110 {
+        height: 110px;
+        flex: unset;
+    }
+    #activite-image-140 {
+        height: 140px;
+        flex: unset;
+    }
+    #activite-image-155 {
+        height: 155px;
+        flex: unset;
+    }
+    #activite-image-390-1 {
+        height: 390px;
+        flex: unset ;
+    }
+    #activite-image-390-2 {
+        height: 390px;
+        flex: unset ;
+    }
+    /*--FIN ACTIVITES MARSEILLE--*/
+
+
+
+
+    
+
+
+
+     /*--DEBUT FOOTER--*/
+    footer.bg-light-grey { 
+        font-size: 18px;
+        margin-top: 50px;
+        padding-top: 0px;
+        background: #f2f2f2;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+    footer.bg-light-grey .footer-colonnes {
+        display: flex;
+    }
+    footer.bg-light-grey .footer-colonnes .footer-colonne {
+        display: block;
+        width: 34%;
+    } /*--FIN FOOTER--*/ 
+}
+/*--FIN FORMAT TABLETTE  (769 - 991)--*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--DEBUT FORMAT ORDINATEUR  (992 - 1199 px)--*/
+
+
+
+@media screen and (min-width: 991px)  { 
+
+    /*-- DEBUT HEADER---*/
+    header .nav-bar { 
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 50px 75px 0 0;
+    }
+    header nav.nav ul.nav-menu {
+        display: flex;
+        flex: 100%;
+        margin-top: 0;
+    }
+    header nav.nav ul.nav-menu li.active {
+        border-top: 2px solid #0065fc;
+        padding: 50px 25px 0 25px;
+        border-bottom: 0
+    }
+    header nav.nav ul.nav-menu li {
+        text-align: center;
+        border-bottom: 0
+    }
+    header nav .nav-menu-sinscrire {
+        margin: 52px 75px 0 25px;
+    }
+    header nav.nav ul.nav-menu li a {
+        display: block;
+        padding: 0;
+        color: black;
+        
+    }
+    header nav.nav ul.nav-menu .no-active { 
+        padding: 52px 25px 0 25px;
+    } 
+    /*--FIN HEADER--*/
+
+
+
+
+
+
+
+    /*--DEBUT RECHERCHE POSITION--*/
+    .recherche-position button.search { 
+        border: 0;
+        position: absolute;
+        top: 0;
+        border-radius: 0 18px 18px 0;
+        right: -10px;
+        display: block;
+        height: 50px;
+        font-size: 18px;
+        background: #0065fc;
+        color: white;
+        width: 27%;
+        outline-style: none;
+    }
+    button i.fas.fa-search {
+        display: none;
+    }
+    button span span {
+        display: block;
+    }  
+    /*--FIN RECHERCHE POSITION--*/
+
+
+
+
+
+
+
+    /*--DEBUT  HEBERGEMENTS MARSEILLE--*/
+    section.hebergements-marseille-populaire { 
+        display: flex;
+        align-items: stretch;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .hebergements-a-marseille {
+        width: 66%;
+    }
+    .Hebergments-populaire {
+        width: 31.5%;
+    }
+    .hebergements-marseille .hebergements a.hebergement { 
+        width: 31.5%;
+    }
+    .hebergements-marseille .hebergements a.hebergement .hebergement-image-div {
+        flex: unset;
+        height: 115px;
+    }
+    /*--FIN  HEBERGEMENTS MARSEILLE--*/
+
+
+
+
+
+
+
+
+    /*--DEBUT  POPULAIRE--*/
+    aside.les-plus-populaire a.populaire .populaire-description .note {
+        font-size: 11px;
+        margin-top: 36%;
+    }
+    aside.les-plus-populaire a.populaire .populaire-description #note {
+        font-size: 11px;
+        margin-top: 27%;
+    }
+    /*--FIN  POPULAIRE--*/
+
+}
+/*--FIN FORMAT ORDINATEUR  (992 - 1199 px)--*/
